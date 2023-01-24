@@ -1,0 +1,55 @@
+body{
+    background-color: green;
+}
+
+p{color:white;}
+
+.titleMain{
+    font-family: Helvetica;
+    font-weight: 600;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.btnDivision{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.btnDivision button{
+    width: 10rem;
+    height: 3rem;
+    font-size: large;
+}
+.btnDivision input{ text-align: center;}
+
+.marginLR5{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#barsDivision{
+    margin: auto;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;    
+    width: 1000px;
+    height: 100vh;
+    
+}
+
+.bar{
+    background-color: turquoise;
+    width: .3rem;
+    margin-left: .07rem;
+    margin-right: .07rem;
+    transform: rotatex(180deg) translate3d(0, -35rem,0);/* the Y-Value shall be higher than the height on hover*/
+    transform-origin: top;
+    display: inline-block;
+    transition: none;
+    /*transition: 0.05s ease-in-out;*/
+}
+
+.barVal{
+    font-size: xx-small;
+}

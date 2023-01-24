@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/static/index.css">
+    <script src="/static/index.js"></script>
+    <title>Home</title>
+{% endblock %}
+
+
+{% block belowHead %}
+
+    <body onload="load()">
+
+        <p class="titleMain" >Sort Visualizer Build 01 Alpha</p>
+        <div class="btnDivision">
+            <button class="marginLR5" id="generateArrayBtn" onclick="generateArray()">Generate Array</button>
+            <input id="sizeTextArea" type="text" autofocus autocomplete="none" placeholder="Array Size ( 3 - 75 )">
+        </div>
+        <br>
+        <div class="btnDivision">
+            <button class="marginLR5" enabled id="sortBySelectionBtn" onclick="selectionSort()">Selection Sort</button>
+            <button class="marginLR5" enabled id="sortByBubbleSortBtn" onclick="bubbleSort()">Bubble Sort</button>
+            <button class="marginLR5" enabled id="sortByMergeSortBtn" onclick="mergeSort()">Merge Sort</button>
+        </div>
+
+        <div id="barsDivision">
+            <div class="bar"></div>
+        </div>
+    </body>
+{% endblock %}
+
+
